@@ -1,26 +1,26 @@
 import cn from "classnames";
 type componentProps = {
   className?: string;
-  placeholder: string;
-  inputType: string;
-  onChange: () => void;
+  placeholder?: string;
+  onChange?: () => void;
+  rows?: number;
 };
-const Input: React.FC<componentProps> = ({
+const Textarea: React.FC<componentProps> = ({
   className,
   placeholder,
-  inputType,
+  rows = 7,
   ...rest
 }) => {
   return (
     <>
-      <input
-        type={inputType}
+      <textarea
+        rows={rows}
         className={cn("w-100", className)}
         {...rest}
         placeholder={placeholder}
-      />
+      ></textarea>
     </>
   );
 };
 
-export default Input;
+export default Textarea;

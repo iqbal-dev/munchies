@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { BiShoppingBag } from "react-icons/bi";
+import { FiSearch } from "react-icons/fi";
 import {
   Container,
   Nav,
-  Navbar as NavbarBs,
   NavItem,
   NavLink,
+  Navbar as NavbarBs,
 } from "reactstrap";
 const Navbar = () => {
   return (
@@ -52,10 +54,14 @@ const Navbar = () => {
           </Nav>
           <Nav className="d-flex float-right">
             <NavItem>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" style={{ color: "white" }}>
+                <FiSearch style={{ fontSize: "25px" }} />
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/about" style={{ color: "white" }}>
+                <BiShoppingBag style={{ fontSize: "25px" }} />
+              </NavLink>
             </NavItem>
           </Nav>
         </div>

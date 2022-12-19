@@ -19,7 +19,7 @@ const ToggleButton = ({
       outline
       color="warning"
       className={cn(
-        ` text-bg-${checked === position && "warning"} rounded-0 m-0`,
+        `${checked === position && " text-bg-warning"} rounded-0 m-0`,
         className
       )}
       onClick={() => toggle(position)}

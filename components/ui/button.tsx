@@ -3,14 +3,14 @@ import React from "react";
 type componentProps = {
   children?: React.ReactNode;
   onClick: () => void;
-  inputType: "submit" | "reset" | "button" | undefined;
+  inputType?: "submit" | "reset" | "button" | undefined;
   className: string;
 };
 
 const Button: React.FC<componentProps> = ({
   children,
   className,
-  inputType = "button",
+  inputType = "submit",
   onClick,
   ...rest
 }) => {

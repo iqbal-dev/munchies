@@ -1,3 +1,5 @@
+import { AiFillStar } from "react-icons/ai";
+import { FaPlusSquare } from "react-icons/fa";
 import { Card, CardBody, CardImg } from "reactstrap";
 import Badge from "../ui/badge";
 const ProductCard = () => {
@@ -16,10 +18,21 @@ const ProductCard = () => {
             <p>$19</p>
           </div>
           <div className="d-flex justify-content-between">
-            <p className="d-flex justify-content-between">
-              <Badge>4.7</Badge>
+            <div
+              className="d-flex justify-content-between p-0"
+              style={{ height: "30px" }}
+            >
+              <Badge className="mr-15px">
+                <div className="d-flex flex-row align-items-center w-100">
+                  <AiFillStar className="mr-2" />{" "}
+                  <span style={{ marginLeft: "8px" }}>4.7</span>
+                </div>
+              </Badge>
+              <Badge>50-79 min</Badge>
+            </div>
+            <p>
+              <FaPlusSquare className="plus_icon" />
             </p>
-            <p>$19</p>
           </div>
         </CardBody>
       </Card>

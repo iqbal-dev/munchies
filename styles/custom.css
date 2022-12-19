@@ -1,0 +1,14 @@
+.customButton {
+  border: none;
+  background-color: #f3ba00;
+  color: #fff;
+
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.customInput {
+  border: none;
+
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}

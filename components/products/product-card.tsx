@@ -1,5 +1,5 @@
 import { Card, CardBody, CardImg } from "reactstrap";
-import Badge from "./ui/badge";
+import Badge from "../ui/badge";
 const ProductCard = () => {
   return (
     <div>
@@ -17,8 +17,7 @@ const ProductCard = () => {
           </div>
           <div className="d-flex justify-content-between">
             <p className="d-flex justify-content-between">
-              <Badge />
-              <Badge />
+              <Badge>4.7</Badge>
             </p>
             <p>$19</p>
           </div>

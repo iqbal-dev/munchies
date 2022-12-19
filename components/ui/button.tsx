@@ -1,13 +1,13 @@
 import cn from "classnames";
 import React from "react";
-interface Props {
+type componentProps = {
   children?: React.ReactNode;
   onClick: () => void;
-  inputType: string;
+  inputType: "submit" | "reset" | "button" | undefined;
   className: string;
-}
+};
 
-const Button: React.FC<Props> = ({
+const Button: React.FC<componentProps> = ({
   children,
   className,
   inputType = "button",

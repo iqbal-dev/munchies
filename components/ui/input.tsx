@@ -5,12 +5,12 @@ type componentProps = {
   inputType: string;
   onChange: () => void;
 };
-const Input = ({
+const Input: React.FC<componentProps> = ({
   className,
   placeholder,
   inputType,
   ...rest
-}: componentProps) => {
+}) => {
   return (
     <>
       <input
